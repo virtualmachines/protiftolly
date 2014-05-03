@@ -1,0 +1,62 @@
+DEPENDENCIES
+  apt
+    git: git://github.com/opscode-cookbooks/apt.git
+    revision: 8ef28bceaa6a9eded47e640d26df4a6f3a80320c
+  git
+    git: git://github.com/jssjr/git.git
+    revision: 76b0f9bb08fdd9e2e201fd70b72298097accdf96
+  imagemagick
+    git: git://github.com/someara/imagemagick.git
+    revision: 891a842ad71a8dadc5ec6ed4fa564493e71e2bce
+  oh_my_zsh
+    git: git://github.com/shingara/oh-my-zsh-chef.git
+    revision: 9ac6131c041f0dc55f80ccdeb23356c1105995a8
+  postgresql
+    git: git://github.com/phlipper/chef-postgresql.git
+    revision: fae090067b5aabf6b9805104772644008d4e431d
+  rbenv
+    git: git://github.com/fnichol/chef-rbenv.git
+    revision: 0a3018634bafe58ad21c6ee271af015220e444b9
+  redis
+  ruby_build
+    git: git://github.com/fnichol/chef-ruby_build.git
+    revision: c940b5e9cd40eaba10d6285de6648f4d25fe959d
+    ref: v0.7.2
+
+GRAPH
+  apt (2.3.9)
+  build-essential (2.0.0)
+  chef_handler (1.1.6)
+  dmg (2.2.0)
+  git (4.0.1)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    runit (>= 1.0.0)
+    windows (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  imagemagick (0.2.2)
+  install_from (3.0.4)
+  java (1.22.0)
+  metachef (3.0.4)
+  oh_my_zsh (0.0.1)
+    git (>= 0.0.0)
+  postgresql (0.13.3)
+    apt (>= 1.9.0)
+  rbenv (0.7.3)
+    java (> 1.4.0)
+    ruby_build (>= 0.0.0)
+  redis (3.0.4)
+    install_from (>= 0.0.0)
+    metachef (>= 0.0.0)
+    runit (>= 0.0.0)
+  ruby_build (0.7.2)
+  runit (1.5.10)
+    build-essential (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  windows (1.30.2)
+    chef_handler (>= 0.0.0)
+  yum (3.2.0)
+  yum-epel (0.3.6)
+    yum (~> 3.0)
