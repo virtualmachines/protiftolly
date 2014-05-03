@@ -3,6 +3,10 @@ $script = <<SCRIPT
   echo cd "/project" > ~/.bash_profile
   echo cd "/project" > ~/.bashrc
   sudo chown -R vagrant ~/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0
+
+  sudo apt-get -y install redis-server imagemagick
+  redis-server
+
   cd /project
   find config -name '*.example' | sed 's/.example//' | xargs -I{} cp -v {}.example {}
    bundle
